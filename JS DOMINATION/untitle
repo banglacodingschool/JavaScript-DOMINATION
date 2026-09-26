@@ -1,0 +1,34 @@
+JavaScript Fundamentals
+------------------------
+1. Create js file ✔️
+2. Integrate js with html file ✔️
+3. run first js code ✔️
+4. Console / Console.log() ✔️
+5. Variables - var / let / const ✔️
+6. Variable naming rules ✔️
+7. Data Types - string, number, boolean, undefined, null, object, array, typeof operator ✔️
+
+8.Operators
+------------
+1. Arithmetic Operators✔️
+2. Assignment Operators✔️
+3. Comparison Operators✔️
+4. Logical Operators✔️
+5. Increment & Decrement✔️
+6. Ternary Operator✔️
+
+9.Input & Output
+-----------------
+1. console.log() ✔️
+2. alert()✔️
+3. prompt()✔️
+4. confirm()✔️
+5. User Input নিয়ে Calculation ✔️
+6. parseInt(), parseFloat()✔️
+
+PRACTICAL 1
+User-এর নাম এবং বয়স নিয়ে output দেখাই:
+
+PRACTICA 2: Addition Calculator
+
+PRACTICAL 3: Age Calculator
