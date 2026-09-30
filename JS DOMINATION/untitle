@@ -26,9 +26,156 @@ JavaScript Fundamentals
 5. User Input নিয়ে Calculation ✔️
 6. parseInt(), parseFloat()✔️
 
-PRACTICAL 1
-User-এর নাম এবং বয়স নিয়ে output দেখাই:
+PRACTICAL 1: User-এর নাম এবং বয়স নিয়ে output দেখাই:✔️
+Ans - 
+let name = prompt("Enter your name:");
+let age = Number(prompt("Enter your age:"));
 
-PRACTICA 2: Addition Calculator
+console.log("Name:", name);
+console.log("Age:", age);
 
-PRACTICAL 3: Age Calculator
+PRACTICA 2: Addition Calculator✔️
+Ans - 
+let num1 = Number(prompt("Enter first number:")); 
+let num2 = Number(prompt("Enter second number:")); 
+
+let sum = num1 + num2; 
+console.log("Result:", sum);
+
+PRACTICAL 3: Age Calculator✔️
+Ans - 
+let birthYear = Number(prompt("Enter your birth year:")); 
+let currentYear = 2026;
+
+let age = currentYear - birthYear;
+console.log("Your age is:", age);
+
+
+10. Conditional Statements
+---------------------------
+1. if✔️
+2. if else✔️
+3. if...else if..else✔️
+4. Nested if✔️
+5.switch case✔️
+
+
+Practical Example 1: Pass / Fail✔️
+ANS-
+
+let marks = 39;
+
+if (marks >= 40) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
+}
+
+Practical Example 2: Login Check✔️
+ANS-
+
+let username = "admin";
+let password = 1234;
+
+if (username === "admin" && password == "1234") {
+  console.log("Login Successful");
+} else {
+  console.log("Invalid username or password");
+}
+
+Practical Example 3: Positive / Negative / Zero✔️
+ANS-
+
+let num = -1;
+
+if (num > 0) {
+  console.log("Positive number");
+} else if (num < 0) {
+  console.log("Negative number");
+} else {
+  console.log("Zero");
+}
+
+Practical Example 4: Even / Odd✔️
+ANS-
+
+let number = 10;
+
+if (number % 2 === 0) {
+  console.log("Even");
+} else {
+  console.log("Odd");
+}
+
+Practical Example 5: Age Category✔️
+ANS-
+
+let age = 68;
+
+if (age < 13) {
+  console.log("Child");
+} else if (age < 20) {
+  console.log("Teenager");
+} else if (age < 60) {
+  console.log("Adult");
+} else {
+  console.log("Senior");
+}
+
+11. LOOPS
+----------
+1. for loop✔️
+2. while✔️ -- first condition check then execute
+3. do...while✔️ -- at least one time code executed then check condition.
+4.break , continue, nested loop✔️
+
+
+Practical Example 1: Multiplication Table
+ANS-
+let number = 5; 
+for (let i = 1; i <= 10; i++)
+{
+   console.log(`${number} x ${i} = ${number * i}`);
+}
+
+
+Practical Example 2: Sum of Numbers
+(1 থেকে 10 পর্যন্ত sum)
+ANS-
+let sum = 0;
+for (let i = 1; i <= 10; i++){ 
+  sum += i;
+}
+console.log(sum);
+
+
+Practical Example 3: Countdown
+ANS-
+for (let i = 10; i >= 1; i--){ 
+  console.log(i); 
+} 
+  console.log("Happy New Year!");
+
+
+Practical Example 4: Find a Number
+ANS-
+
+for (let i = 1; i <= 10; i++) { 
+  if (i === 7) 
+{ 
+console.log("Number found!"); 
+break; 
+}
+}
+
+
+12. Functions
+--------------
+1.What , Why & how to - use?✔️
+2.Function Declaration✔️
+3.Function Call✔️
+4.Parameters✔️
+5.Arguments✔️
+6.Return✔️
+7.Function Expression✔️
+8.Arrow Function✔️
