@@ -179,3 +179,119 @@ break;
 6.Return✔️
 7.Function Expression✔️
 8.Arrow Function✔️
+
+9.Scope & Hoisting 
+-------------------
+1.Global Scope✔️
+2.Function Scope✔️
+3.Block Scope✔️
+4.var vs let vs const✔️
+5.Hoisting✔️
+6.var VS let/const hoisting✔️
+
+Challenge 1
+-------------
+একটি global variable তৈরি করুন এবং function-এর ভিতর থেকে access করুন।
+
+Challenge 2
+------------
+Function-এর ভিতরে একটি let variable তৈরি করুন এবং function-এর বাইরে access করার চেষ্টা করুন।
+কী হয় দেখুন।
+
+Challenge 3
+------------
+একটি if block-এর ভিতরে let এবং var দিয়ে variable তৈরি করুন।
+দুটো block-এর বাইরে access করে difference দেখুন।
+
+Challenge 4
+------------
+নিচের code-এর output আগে guess করুন:
+
+console.log(x);
+var x = 10;
+
+তারপর:
+console.log(y);
+let y = 20;
+
+নিজে run করে result দেখুন।
+
+13.Strings & String Methods
+-------------------------
+1.String কী✔️
+2.length✔️
+3.toUpperCase() , toLowerCase(), trim(), includes(), startsWith(), endsWith(), slice(), replace(), split()✔️
+
+Challenge 1
+let name = "   javascript   ";
+Output করুন:
+JAVASCRIPT
+
+Challenge 2
+let email = "student@gmail.com";
+Check করুন email-এর মধ্যে @ আছে কিনা।
+
+Challenge 3
+let file = "website.png";
+Check করুন file .png দিয়ে শেষ হয়েছে কিনা।
+
+Challenge 4
+let sentence = "I love web development";
+web আছে কিনা check করুন।
+
+Challenge 5
+let fruits = "Apple,Mango,Banana,Orange";
+এটাকে Array-তে convert করুন।
+
+
+14.Arrays $ Arrays Methods
+---------------------------
+1.Array কী✔️
+2.Create & Access✔️
+3.Index✔️
+4.Update✔️
+5.length✔️
+6.push(), pop(), unshift(), shift() ✔️
+7. forEach(), map(), filter(), find(), includes(), indexOf(), slice(), splice()  ✔️
+
+Challenge 1
+const numbers = [1, 2, 3, 4, 5];
+map() দিয়ে প্রতিটি number-এর square বের করুন।
+
+Challenge 2
+const numbers = [10, 15, 20, 25, 30];
+filter() দিয়ে শুধু even numbers বের করুন।
+
+Challenge 3
+একটি product array থেকে:
+price > 1000
+এমন সব products filter() করুন।
+
+Challenge 4
+একটি student array থেকে find() ব্যবহার করে নির্দিষ্ট student খুঁজুন।
+
+Challenge 5
+includes() ব্যবহার করে একটি product cart-এ "Laptop" আছে কিনা check করুন।
+
+📌 QUICK REFERENCE
+forEach()  → Loop through
+map()      → Transform → New Array
+filter()   → Filter → New Array
+find()     → First matching value
+includes() → Check value
+indexOf()  → Find index
+slice()    → Copy part
+splice()   → Add / Remove / Replace
+
+15. JavaScript OBJECT
+-----------------------
+1.Object কী✔️
+2.Properties✔️
+3.Access, Update, Add, Delete✔️
+4.Methods✔️
+5.Nested Objects✔️
+6.Objects with Arrays✔️
+
+
+
+
