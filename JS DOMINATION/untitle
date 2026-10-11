@@ -293,5 +293,32 @@ splice()   → Add / Remove / Replace
 6.Objects with Arrays✔️
 
 
+16. Destructuring in JavaScript
+--------------------------------
+1.What is it?✔️
+2.Array Destructuring✔️
+3.Object Destructuring✔️
+4.Practical Example✔️
+
+Task 1: একটি Array থেকে প্রথম এবং শেষ value destructure করো।
+
+Task 2: এই Object থেকে name এবং marks বের করো।
+const student = {
+    name: "Rahul",
+    marks: 90,
+    course: "BCA"
+};
+
+
+Task 3: নিচের Object থেকে city বের করো এবং age-এর default value 18 রাখো।
+const user = {
+    name: "Amit",
+    address: {
+        city: "Kolkata"
+    }
+};
+
+নিজে চেষ্টা করবে, তারপর comment-এ তোমার solution জানাবে।
+
 
 
