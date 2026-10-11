@@ -696,18 +696,75 @@ let count = 5;
 
 //Objects with array
 
+// const student = {
+//     name:"ram",
+//     skills:["html", "css","js"]
+// };
+
+// // console.log(student.skills);
+
+// student.skills.forEach(skill =>{
+//     console.log(skill);
+// })
+
+
+// 2.Array Destructuring
+
+const colors = ["red", "blue", "green"];
+
+// const first = colors[0];
+// const second = colors[1];
+
+// console.log(first);
+// console.log(second);
+
+//destructuring in array
+const [first, second, third] = colors;
+
+console.log(first);
+console.log(second);
+console.log(third);
+
+//default values
+const numbers = [10];
+
+const [a, b=20] = numbers;
+
+console.log(a);
+console.log(b);
+
+
+// 3.Object Destructuring
+
 const student = {
-    name:"ram",
-    skills:["html", "css","js"]
+    name:"kamal",
+    age:21,
+    course:'BCA'
 };
 
-// console.log(student.skills);
+// const {name, age, course} = student;
 
-student.skills.forEach(skill =>{
-    console.log(skill);
-})
+// console.log(name);
+// console.log(age);
+// console.log(course);
+
+//default values
+// const {name, year=3} = student;
+
+// console.log(name);
+// console.log(year);
 
 
+const product = {
+    name:"Laptop",
+    price:50000,
+    brand:'HP'
+}
+
+const {name, price} = product;
+
+console.log(`Product: ${name}`);
+console.log(`Price: ${price}`);
 
 
 
