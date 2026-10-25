@@ -321,4 +321,48 @@ const user = {
 নিজে চেষ্টা করবে, তারপর comment-এ তোমার solution জানাবে।
 
 
+17.Spread & Rest Operators in JavaScript
+-----------------------------------------
+1. Spread Operator কী?✔️
+2. Array Copy করা✔️
+3. Spread Operator with Objects✔️
+4. Function-এ Spread Operator✔️
+5. Rest Operator কী?
+6. Rest Operator with Destructuring
+
+*Spread = ছড়িয়ে দেওয়া।
+*Rest = বাকি সব এক জায়গায় collect করা।
+
+Task 1: Array Combine
+দুটি Array combine করে নতুন Array তৈরি করো।
+const frontend = ["HTML", "CSS"];
+const backend = ["Python", "FastAPI"];
+
+Task 2: Object Update
+Spread Operator ব্যবহার করে student Object copy করো এবং marks: 90 যোগ করো।
+const student = {
+    name: "Rahul",
+    course: "BCA"
+};
+
+
+Task 3: Rest Operator
+এমন একটি Function তৈরি করো, যেটি যতগুলি Number পাবে, সবগুলির Sum return করবে।
+
+sum(10, 20, 30);
+sum(5, 10, 15, 20);
+
+18. Higher Oder Functions (HOFs)✔️
+---------------------------------
+19. Synchronous vs Asynchronous JavaScript✔️
+---------------------------------
+20. setTimeout() & setInterval()✔️
+
+Practice Challenge
+Task 1: setTimeout() ব্যবহার করে 3 সেকেন্ড পরে "Welcome!" print করো।
+
+Task 2: setInterval() ব্যবহার করে প্রতি সেকেন্ডে 1 থেকে 10 পর্যন্ত count করো। 10 হলে interval বন্ধ করো।
+
+Task 3: একটি countdown তৈরি করো, যা 5 থেকে 1 পর্যন্ত count করবে এবং শেষে "Happy Coding!" print করবে।
+
 
