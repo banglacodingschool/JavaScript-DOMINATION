@@ -145,7 +145,7 @@ let eligible = false;
 //  ++
 //  --
 
-let count = 5;
+// let count = 5;
 
 // count++;
 // count = count+1;
@@ -367,7 +367,6 @@ let count = 5;
 //   i++;
 // }
 
-
 // let i =11;
 
 // do{
@@ -381,7 +380,7 @@ let count = 5;
 //     continue;
 //   }
 //   console.log(i);
-  
+
 // }
 
 // Nested loop
@@ -390,7 +389,6 @@ let count = 5;
 //      console.log(i,j);
 //   }
 // }
-
 
 // Functions in js
 
@@ -435,7 +433,7 @@ let count = 5;
 
 // //4. function without parameter & return type
 // function Hii(){
-//     console.log("Hello");   
+//     console.log("Hello");
 // }
 
 // Hii();
@@ -449,7 +447,6 @@ let count = 5;
 
 // let rs = add(10,20); //fnc call
 // console.log(rs);
-
 
 // //Function Expression
 // const greet = function(a,b){
@@ -476,7 +473,7 @@ let count = 5;
 // function greet(){
 //     // let name="kamal"; //func scope
 //     console.log("welcome " + name);
-    
+
 // }
 // greet();
 
@@ -486,7 +483,7 @@ let count = 5;
 //     // var msg ="True"; // var is not block-scoped
 //     let msg ="true"; // block scoped
 //     console.log(msg);
-    
+
 // }
 
 //     console.log(msg);
@@ -501,7 +498,7 @@ let count = 5;
 
 // function greet(){
 //     console.log("hello");
-    
+
 // }
 
 // let name = "   kamal manna   ";
@@ -530,18 +527,15 @@ let count = 5;
 //                     //n, n-1;
 // console.log(url.slice(8,26));
 
-
 // let rs= url.replace("bangla", "Bengali");
 
 // console.log(rs);
-
 
 // let colors = "red, blue, green";
 
 // let result = colors.split();
 
 // console.log(result);;
-
 
 // let colors = ["red", "blue", "green"]; //arrays
 //  indexing  - from 0 to ...
@@ -567,7 +561,6 @@ let count = 5;
 // colors.shift()
 // console.log(colors);
 
-
 // let data = ["kamal", 20, true, null]
 
 // console.log(data);
@@ -577,7 +570,6 @@ let count = 5;
 // for(let i=0; i<colors.length; i++){
 //     console.log(colors[i]);
 // }
-
 
 // let fruits = ["Apple","Mango",'Banana'];
 
@@ -589,7 +581,6 @@ let count = 5;
 //     console.log(fruit, index);
 // })
 
-
 // const numbers = [1,2,3,4];
 
 // const double = numbers.map((number)=>{
@@ -597,7 +588,6 @@ let count = 5;
 // });
 
 // console.log(double);
-
 
 // const numbers = [10,15,20,25,30];
 
@@ -614,7 +604,6 @@ let count = 5;
 
 // console.log(passedStudents);
 
-
 // const result = numbers.find(number => number>20);
 // console.log(result);
 
@@ -622,11 +611,10 @@ let count = 5;
 
 // console.log(numbers.indexOf(20));
 
-
 // const rs = numbers.slice(1,3);
 // console.log(rs);
 
-//splice 
+//splice
 // 1.remove
 
 // let colors = ["red", "blue", "green"];
@@ -641,7 +629,6 @@ let count = 5;
 // colors.splice(0,1,"white");
 // console.log(colors);
 
-
 // Name, age, course, marks -- PROPERTIES
 //   const student ={
 //     name:"kamal",
@@ -650,7 +637,6 @@ let count = 5;
 //     skills: ["music", "css", "js"],
 //     marks:69
 //   }
-
 
 // console.log(student.name);
 // console.log(student.marks);
@@ -680,7 +666,6 @@ let count = 5;
 
 // user.greet();
 
-
 //nested object
 
 // const std = {
@@ -707,65 +692,240 @@ let count = 5;
 //     console.log(skill);
 // })
 
+// // 2.Array Destructuring
 
-// 2.Array Destructuring
+// const colors = ["red", "blue", "green"];
 
-const colors = ["red", "blue", "green"];
+// // const first = colors[0];
+// // const second = colors[1];
 
-// const first = colors[0];
-// const second = colors[1];
+// // console.log(first);
+// // console.log(second);
+
+// //destructuring in array
+// const [first, second, third] = colors;
 
 // console.log(first);
 // console.log(second);
+// console.log(third);
 
-//destructuring in array
-const [first, second, third] = colors;
+// //default values
+// const numbers = [10];
 
-console.log(first);
-console.log(second);
-console.log(third);
+// const [a, b=20] = numbers;
 
-//default values
-const numbers = [10];
+// console.log(a);
+// console.log(b);
 
-const [a, b=20] = numbers;
+// // 3.Object Destructuring
 
-console.log(a);
-console.log(b);
+// const student = {
+//     name:"kamal",
+//     age:21,
+//     course:'BCA'
+// };
+
+// // const {name, age, course} = student;
+
+// // console.log(name);
+// // console.log(age);
+// // console.log(course);
+
+// //default values
+// // const {name, year=3} = student;
+
+// // console.log(name);
+// // console.log(year);
+
+// const product = {
+//     name:"Laptop",
+//     price:50000,
+//     brand:'HP'
+// }
+
+// const {name, price} = product;
+
+// console.log(`Product: ${name}`);
+// console.log(`Price: ${price}`);
+
+// const numbers = [10,20,30];
+// const numbers2 = [40,50,60];
+
+// console.log(...numbers);
+
+// //combine arrays
+// const result = [...numbers, ...numbers2];
+// console.log(result);
+
+//copy
+
+// const copy = [...numbers];
+
+// copy.push(40);
+
+// console.log(numbers);
+
+// console.log(copy);
+
+//3. Spread Operator with Objects
+
+// const student = {
+//   name: "kamal",
+//   age: 20,
+// };
+
+// const updatedStudent = {
+//   ...student,
+//   course: "BCA",
+//   //update
+//   age: 22,
+// };
+
+// console.log(updatedStudent);
+
+//4. Function-এ Spread Operator
+
+// function add(a, b, c) {
+//   return a + b + c;
+// }
+
+// const numbers = [10,20,30];
+
+// console.log(add(...numbers));
+
+//rest
+// function sum(...numbers){
+//     console.log(numbers);
+// }
+
+// sum(10,20,30,40);
+
+// function sum(...numbers){
+//    let total = 0;
+
+//    for(let i =0; i<numbers.length; i++){
+//     total += numbers[i];
+//    }
+
+//    return total;
+// }
+
+// console.log(sum(10,20,30));
+
+// 6. Rest Operator with Destructuring
+
+// const numbers = [10,20,30,40];
+
+// const[a,b, ...remaining] = numbers;
+
+// console.log(a);
+// console.log(b);
+// console.log(remaining);
+
+// HOFs
+
+// function greet(){
+//     console.log("HEllow World!");
+// }
+
+// //hof
+// function execute(callback){
+//        callback();
+// }
+
+// execute(greet);
+
+// function sayHello(){
+//     console.log("Hello");
+// }
+
+// function process(callback){
+//     console.log("Processing...");
+
+//     callback();
+// }
+
+// process(sayHello);
+
+//calculator
+
+// function add(a,b){
+//     return a+b;
+// }
+
+// function subtract(a,b){
+//     return a-b;
+// }
+
+// function calculate(a,b, operation){
+//     return operation(a,b);
+// }
+
+// console.log(calculate(10,20,add));
+// console.log(calculate(10,20,subtract));
+
+// Synchronous vs Asynchronous JavaScript
+
+// console.log("Synchronous");
+// console.log("Synchronous2");
+// console.log("Synchronous3");
+
+// console.log("start");
+
+// let total =0;
+
+// for(let i =1; i<=3; i++){
+//     total+=i;
+// }
+
+// console.log(total);
+// console.log("End");
+
+// console.log("start");
+
+// setTimeout(()=>{
+//     console.log("Async Task");
+// },2000);
+
+// console.log("End");
+
+// setTimeout(Callback, delay);
+
+// console.log("Start");
+
+// const timer = setTimeout(()=>{
+//     console.log("Hello JS");
+// },2000);
+
+// clearTimeout(timer);
+
+// console.log("END");
+
+// setInterval(()=>{
+//     console.log("Hello");
+// }, 2000);
+
+// let count = 0;
+
+// const interval = setInterval(() => {
+//   count++;
+
+//   console.log(count);
+
+//   if (count === 5) {
+//     clearInterval(interval);
+//     console.log("Timer stopped");
+//   }
+// }, 1000);
 
 
-// 3.Object Destructuring
+//Digital Clock
+function showTime (){
+    const now = new Date();
 
-const student = {
-    name:"kamal",
-    age:21,
-    course:'BCA'
-};
-
-// const {name, age, course} = student;
-
-// console.log(name);
-// console.log(age);
-// console.log(course);
-
-//default values
-// const {name, year=3} = student;
-
-// console.log(name);
-// console.log(year);
-
-
-const product = {
-    name:"Laptop",
-    price:50000,
-    brand:'HP'
+    console.log(now.toLocaleTimeString());
 }
 
-const {name, price} = product;
+showTime();
 
-console.log(`Product: ${name}`);
-console.log(`Price: ${price}`);
-
-
-
-
+// const clock = setInterval(showTime,1000);
