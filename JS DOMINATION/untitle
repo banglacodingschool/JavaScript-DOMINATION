@@ -292,7 +292,6 @@ splice()   → Add / Remove / Replace
 5.Nested Objects✔️
 6.Objects with Arrays✔️
 
-
 16. Destructuring in JavaScript
 --------------------------------
 1.What is it?✔️
@@ -357,7 +356,7 @@ sum(5, 10, 15, 20);
 19. Synchronous vs Asynchronous JavaScript✔️
 ---------------------------------
 20. setTimeout() & setInterval()✔️
-
+--------------------------------
 Practice Challenge
 Task 1: setTimeout() ব্যবহার করে 3 সেকেন্ড পরে "Welcome!" print করো।
 
@@ -366,3 +365,36 @@ Task 2: setInterval() ব্যবহার করে প্রতি সেক�
 Task 3: একটি countdown তৈরি করো, যা 5 থেকে 1 পর্যন্ত count করবে এবং শেষে "Happy Coding!" print করবে।
 
 
+21. map(), filter() & reduce() Masterclass ✔️
+-------------------------------------------
+Practice Challenge
+নিচের data ব্যবহার করে তিনটি task complete করো।
+
+const products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Mouse", price: 500 },
+    { name: "Keyboard", price: 1500 },
+    { name: "Monitor", price: 10000 }
+];
+
+Task 1: map() ব্যবহার করে সব product-এর নাম নিয়ে নতুন Array তৈরি করো।
+Task 2: filter() ব্যবহার করে 2000 টাকার বেশি দামের products বের করো।
+Task 3: reduce() ব্যবহার করে সব products-এর total price বের করো।
+Bonus: শুধু 1000 টাকার বেশি দামের products-এর total price বের করো। চেষ্টা করো filter() ও reduce() একসঙ্গে ব্যবহার করে।
+
+22. Promises in JavaScript✔️
+--------------------------
+1. Promise ki?
+2. resolve reject
+3. .then()
+4. catch()
+5. Promise Chaining
+
+Practice Challenge
+Task 1: একটি Promise তৈরি করো, যেটি "Login Successful" return করবে।
+Task 2: একটি Promise reject করো এবং .catch() দিয়ে error print করো।
+
+Task 3: Promise chaining ব্যবহার করে:
+10-কে 2 দিয়ে multiply করো।
+তারপর 5 যোগ করো।
+Final result print করো।
