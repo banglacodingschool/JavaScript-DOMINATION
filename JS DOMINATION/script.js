@@ -918,14 +918,138 @@ let eligible = false;
 //   }
 // }, 1000);
 
-
 //Digital Clock
-function showTime (){
-    const now = new Date();
+// function showTime (){
+//     const now = new Date();
 
-    console.log(now.toLocaleTimeString());
-}
+//     console.log(now.toLocaleTimeString());
+// }
 
-showTime();
+// showTime();
 
 // const clock = setInterval(showTime,1000);
+
+// const prices = [100,200,300];
+
+// console.log(prices);
+
+// const pricesWithTax = prices.map(price =>{
+//     return price * 1.18;
+// });
+
+// console.log(pricesWithTax);
+
+// const students = [
+//     {name:"kamal", marks: 85},
+//     {name:"rahul", marks: 72},
+//     {name:"priya", marks: 91},
+// ]
+
+// const names = students.map(student => student.name);
+
+// console.log(names);
+
+// const students = [
+//     {name:"kamal", marks: 85},
+//     {name:"rahul", marks: 72},
+//     {name:"priya", marks: 91},
+// ]
+
+// const toppers = students.filter(student => {
+//     return student.marks >=80;
+// })
+
+// console.log(toppers);
+
+// const products = [
+//     { name: "Mouse", price: 500 },
+//     { name: "Keyboard", price: 1500 },
+//     { name: "Monitor", price: 8000 }
+// ];
+
+// const expensiveProduct = products.filter(product => product.price > 1000);
+
+// console.log(expensiveProduct);
+
+// const prices = [100, 200, 300];
+
+// const total = prices.reduce((sum, price) => {
+//   return sum + price;
+// }, 0);
+
+// console.log(total);
+
+// const products = [
+//   { name: "Mouse", price: 500 },
+//   { name: "Keyboard", price: 1500 },
+//   { name: "Monitor", price: 8000 },
+// ];
+
+// const totalPrice = products.reduce((total, product) => {
+//   return total + product.price;
+// }, 0);
+
+// console.log(totalPrice);
+
+// const promise = new Promise((resolve, reject)=>{
+//    resolve("Task Completed");
+// })
+
+// console.log(promise);
+
+// const promise = new Promise((resolve, reject)=>{
+//      const success = false;
+
+//      if(success){
+//       resolve("Data loaded successfully");
+//      }else{
+//       reject("Failed to load");
+//      }
+// })
+
+// console.log(promise);
+
+// const promise = new Promise((resolve, reject)=>{
+//   resolve("Hellow Javascript");
+// })
+
+// promise.then((result)=>{
+//   console.log(result);
+// })
+
+// const promise = new Promise((resolve, reject)=>{
+//   reject("Something went wrong");
+// })
+
+// promise.then((result)=>{
+//   console.log(result);
+// })
+// .catch((error)=>{
+//   console.log(error);
+// })
+
+// const promise = new Promise((resolve) => {
+//   setTimeout(() => {
+//     resolve("Data received");
+//   }, 2000);
+// });
+
+// promise.then((rs) => {
+//   console.log(rs);
+// });
+
+// console.log("Fetching data..");
+
+// Promise.resolve(5)
+//   .then((number) => {
+//     return number * 2;
+//   })
+//   .then((result) => {
+//     return result + 10;
+//   })
+//   .then((finalResult)=>{
+//     console.log(finalResult);
+//   })
+//   .catch((er)=>{
+//     console.log(er);
+//   })
