@@ -1053,3 +1053,171 @@ let eligible = false;
 //   .catch((er)=>{
 //     console.log(er);
 //   })
+
+// function getData(){
+//     return new Promise((resolve)=>{
+//         setTimeout(() => {
+//             resolve("Data received");
+//         }, 2000);
+//     })
+// }
+
+// async function fetchData(){
+//     const data = await getData();
+//     console.log(data);
+// }
+
+// fetchData();
+
+// async function getUsers() {
+//   try {
+//     let res = await fetch("https://randomuser.me/api/");
+
+//     let data = await res.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("Error:", error);
+//   }
+// }
+
+// getUsers();
+
+// try {
+
+// } catch (error) {
+
+// }
+
+// FETCH API & JSON
+
+// const user = {
+//     "id": 1,
+//     "name": "Kamal",
+//     "email": "kamal@example.com"
+// };
+
+// json string to js object - parse
+
+// const jsonData = '{"name":"Kamal","age":20}';
+
+// const user = JSON.parse(jsonData);
+
+// console.log(user.name);
+// console.log(user.age);
+
+// js object to json string -- stringify
+
+// const student = {
+//     name: "Kamal",
+//     email: "kamal@example.com"
+// };
+
+// const jsonString = JSON.stringify(student);
+
+// console.log(jsonString);
+
+// https://jsonplaceholder.typicode.com/users/1
+
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+//   .then((res) => res.json())
+//   .then((user) => {
+//     console.log(user);
+//   })
+//   .catch((er) => {
+//     console.log("Error :", er);
+//   });
+
+  // async await Fetch API
+
+//   async function getUser(){
+//      try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+//         const user = await response.json();
+//         console.log("User Name:", user.name);
+//         console.log("User Email:", user.email);
+//         console.log("User Phone:", user.phone);
+
+//      } catch (error) {
+//         console.log("error: ", error.message);
+//      } 
+//   }
+
+// getUser();
+
+
+//DOM MANIPULTION
+// getElementById()
+
+// const title = document.getElementById("title");
+
+// console.log(title);
+
+// querySelector() -- SELECTS ONLY FIRST MATCHING ELEMENT
+
+// const heading = document.querySelector("#title");
+// const para = document.querySelector(".desc");
+
+// console.log(heading);
+// console.log(para);
+
+// querySelectorAll() - SELECTS ALL MATCHING ELEMENTS
+
+// const para2 = document.querySelectorAll("p");
+
+// console.log(para2);
+
+
+//CHANGE TEXT
+// const title = document.querySelector("#title");
+
+// const button = document.querySelector("#changeBtn");
+
+// button.addEventListener("click", ()=>{
+//   title.textContent = "Welcome to JS";
+// });
+
+//innerHTML VS textContent
+
+// const message = document.querySelector("#message");
+
+// // message.textContent = "Hello Students";
+// message.innerHTML = "<strong>Hello Students</strong>";
+
+
+const title = document.querySelector("#title");
+
+// const styleBtn = document.querySelector("#styleBtn");
+
+// styleBtn.addEventListener("click", ()=>{
+//    title.style.color = "blue";
+//    title.style.backgroundColor = "lightyellow";
+//    title.style.padding = "10px";
+// })
+
+
+//classlist
+
+// title.classList.add("highlight");
+// title.classList.remove("highlight");
+// toggle()
+
+
+// const todoList = document.querySelector("#todoList");
+// const addBtn = document.querySelector("#addBtn");
+
+// addBtn.addEventListener("click",()=>{
+//   const li = document.createElement("li");
+
+//   li.textContent = "Learn JavaScript DOM";
+
+//   todoList.appendChild(li);
+// })
+
+
+// Dark Mode Toggle
+
+const themeBtn = document.querySelector("#themeBtn");
+
+themeBtn.addEventListener("click", ()=>{
+  document.body.classList.toggle("dark");
+});
