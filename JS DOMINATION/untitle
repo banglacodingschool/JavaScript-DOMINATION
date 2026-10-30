@@ -398,3 +398,32 @@ Task 3: Promise chaining ব্যবহার করে:
 10-কে 2 দিয়ে multiply করো।
 তারপর 5 যোগ করো।
 Final result print করো।
+
+23. Async/Await & Error Handling in JavaScript✔️
+-----------------------------------------------
+24. Fetch API & JSON✔️
+---------------------
+JSON - javascript object notation
+
+
+
+25. DOM Manipulation in JavaScript
+----------------------------------
+1. DOM কী✔️
+2. getElementById()✔️
+3. querySelector() ও querySelectorAll()✔️
+4. textContent ও innerHTML✔️
+5. CSS styles এবং classList✔️
+6. Attributes পরিবর্তন✔️
+7. createElement() ও appendChild()✔️
+8. remove()✔️
+9. Practical Dark Mode Toggle✔️
+
+Practice Challenge
+Task 1: একটি heading এবং button তৈরি করো। Button click করলে heading-এর text পরিবর্তন হবে।
+
+Task 2: একটি paragraph-এর color button click করে change করো।
+
+Task 3: একটি list এবং button তৈরি করো। প্রতিবার button click করলে নতুন list item add হবে।
+
+Task 4: একটি Dark Mode toggle তৈরি করো।
