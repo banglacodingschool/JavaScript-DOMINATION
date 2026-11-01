@@ -1184,7 +1184,7 @@ let eligible = false;
 // message.innerHTML = "<strong>Hello Students</strong>";
 
 
-const title = document.querySelector("#title");
+// const title = document.querySelector("#title");
 
 // const styleBtn = document.querySelector("#styleBtn");
 
@@ -1216,8 +1216,157 @@ const title = document.querySelector("#title");
 
 // Dark Mode Toggle
 
-const themeBtn = document.querySelector("#themeBtn");
+// const themeBtn = document.querySelector("#themeBtn");
 
-themeBtn.addEventListener("click", ()=>{
-  document.body.classList.toggle("dark");
-});
+// themeBtn.addEventListener("click", ()=>{
+//   document.body.classList.toggle("dark");
+// });
+
+// 1. Mouse Events
+// element.addEventListeners("event", function);\
+
+const button = document.querySelector("#btn");
+
+const title = document.querySelector("#title");
+
+// button.addEventListener("click",()=>{
+//   title.textContent = "Button Clicked!!";
+// });
+
+// button.addEventListener("dblclick",()=>{
+//   title.textContent = "Button Clicked!!";
+// });
+
+// const box = document.querySelector("#box");
+
+// box.addEventListener("mouseover", ()=>{
+//   box.style.backgroundColor="orange";
+// });
+
+// box.addEventListener("mouseout", ()=>{
+//   box.style.backgroundColor="lightblue";
+// });
+
+// 2.Keyboard Events
+
+// keydown, keyup
+
+
+// const input = document.querySelector("#username");
+// const result = document.querySelector("#result");
+
+// input.addEventListener("keydown", (event)=>{
+//    console.log( "Key entered:" + event.key );
+// })
+
+// input.addEventListener("keyup", (event)=>{
+//   result.textContent = "You entered:" + input.value;
+// })
+
+// 3. Input Events
+
+// const msg = document.querySelector("#msg");
+// const count = document.querySelector("#count");
+
+// msg.addEventListener("input",()=>{
+//   count.textContent = `${msg.value.length}/100`;
+// });
+
+// 4. Change Event
+  // const course= document.querySelector("#course");
+  // const selected= document.querySelector("#selected");
+
+  // course.addEventListener("change",()=>{
+  //   selected.textContent = "Selected Course : "+ course.value;
+  // });
+
+
+// const form = document.querySelector("#loginForm");
+// const message = document.querySelector("#message");
+
+// form.addEventListener("submit", (event) => {
+//          event.preventDefault();
+
+//          const email = document.querySelector("#email").value;
+//          const password = document.querySelector("#password").value;
+
+//          message.textContent = `Welcome ${email}`;
+
+        //  console.log("Password length:"+ password.length);
+         
+
+        //  console.log(event);
+        //  console.log(event.type);
+        //  console.log(event.target);
+  
+// });
+
+// removeEventListener()
+
+// const parent = document.querySelector("#parent");
+// const child = document.querySelector("#child");
+
+// parent.addEventListener("click",()=>{
+//   console.log("Parent cliked");
+// });
+
+// child.addEventListener("click",(event)=>{
+//   event.stopPropagation();
+//   console.log("Child cliked");
+// });
+
+// stopPropagation()
+
+
+// 2. Event Delegation
+
+// const todoList = document.querySelector("#todoList");
+
+// todoList.addEventListener("click",(event)=>{
+//   if(event.target.tagName ==="LI"){
+//     console.log(event.target.textContent);
+//  }
+// });
+
+//TODO LIST with Delete Button
+// 1. new task add
+// 2. task have delete btn
+// 3. delete btn action to delete
+// 4. event delegation
+
+
+// const taskInput = document.querySelector("#taskInput");
+// const addBtn = document.querySelector("#addBtn");
+// const todoList = document.querySelector("#todoList");
+
+// ADD TASK
+
+// addBtn.addEventListener("click",()=>{
+//     const task = taskInput.value.trim();
+
+//     if(task===""){
+//       alert("Please enter a task");
+//       return;
+//     }
+   
+//     const li = document.createElement("li");
+//     const span = document.createElement("span");
+//     const deleteBtn = document.createElement("button")
+
+//     span.textContent = task;
+//     deleteBtn.textContent = "Delete";
+//     deleteBtn.className = "delete-btn";
+
+//     li.append(span, deleteBtn);
+//     todoList.appendChild(li);
+
+//     taskInput.value = "";
+// })
+
+// Event delegation: Delete feature
+
+// todoList.addEventListener("click",(event)=>{
+//   if(event.target.classList.contains("delete-btn")){
+//     event.target.closest("li").remove();
+//   }
+// })
