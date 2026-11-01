@@ -421,9 +421,26 @@ JSON - javascript object notation
 
 Practice Challenge
 Task 1: একটি heading এবং button তৈরি করো। Button click করলে heading-এর text পরিবর্তন হবে।
-
 Task 2: একটি paragraph-এর color button click করে change করো।
-
 Task 3: একটি list এবং button তৈরি করো। প্রতিবার button click করলে নতুন list item add হবে।
-
 Task 4: একটি Dark Mode toggle তৈরি করো।
+
+26. Events & Event Listener✔️
+----------------------------
+
+Event                work
+1. click             element click 
+2. dblclick          double click
+3. mouseover         Element-এর উপর mouse এলে
+4. mouseout          Element থেকে mouse বের হলে
+5. mousedown         Mouse button press করলে
+6. mouseup           Mouse button release করলে
+
+
+27. Event Bubbling & Event Delegation
+--------------------------------------
+Task 1: একটি parent div এবং তার ভিতরে তিনটি button তৈরি করো। Parent ও প্রতিটি button-এ event listener দিয়ে Event Bubbling observe করো।
+
+Task 2: একটি list তৈরি করো। Event Delegation ব্যবহার করে যেকোনো list item click করলে তার text print করো।
+
+Task 3: একটি Todo List তৈরি করো, যেখানে Event Delegation ব্যবহার করে Delete functionality implement করবে।
