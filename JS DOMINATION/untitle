@@ -437,10 +437,96 @@ Event                work
 6. mouseup           Mouse button release করলে
 
 
-27. Event Bubbling & Event Delegation
+27. Event Bubbling & Event Delegation✔️
 --------------------------------------
 Task 1: একটি parent div এবং তার ভিতরে তিনটি button তৈরি করো। Parent ও প্রতিটি button-এ event listener দিয়ে Event Bubbling observe করো।
-
 Task 2: একটি list তৈরি করো। Event Delegation ব্যবহার করে যেকোনো list item click করলে তার text print করো।
-
 Task 3: একটি Todo List তৈরি করো, যেখানে Event Delegation ব্যবহার করে Delete functionality implement করবে।
+
+
+28. Form Handling & Validation in JavaScript✔️
+--------------------------------------------
+
+
+
+29. LocalStorage & SessionStorage in JavaScript
+-----------------------------------------------
+1. LocalStorage ✔️
+2. SessionStorage✔️
+3. setItem()✔️
+4. getItem()✔️
+5. removeItem()✔️
+6. clear()✔️
+7. JSON data storage✔️
+8. Practical Todo App✔️
+
+
+
+30. JavaScript Complete Course Wrap-Up & What's Next?
+---------------------------------------
+
+JavaScript Journey: What We Learned
+চলো একবার দেখে নিই এই course-এ আমরা কী কী শিখেছি।
+
+Phase 1: JavaScript Fundamentals
+---------------------------------
+Introduction to JavaScript
+Variables & Data Types
+Operators
+Input & Output
+Conditional Statements
+Loops
+Functions
+Scope & Hoisting
+
+Phase 2: Working with Data
+---------------------------
+Strings & String Methods
+Arrays
+Array Methods: map(), filter(), reduce()
+Objects
+Destructuring
+Spread & Rest Operators
+
+Phase 3: Asynchronous JavaScript
+----------------------------------
+Synchronous vs Asynchronous JavaScript
+Callbacks
+Promises
+Async/Await
+Error Handling
+Fetch API & JSON
+
+Phase 4: DOM & Browser Interaction
+------------------------------------
+JavaScript Modules
+DOM Manipulation
+Events & Event Listeners
+Event Bubbling & Event Delegation
+Form Handling & Validation
+LocalStorage & SessionStorage
+
+
+What's Next After JavaScript?
+JavaScript শেখার পর তোমার সামনে বেশ কয়েকটি learning path রয়েছে।
+
+If You Want to Become a Frontend Developer:
+
+React.js
+React Router
+API Integration
+State Management
+Tailwind CSS / Bootstrap
+Next.js
+
+If You Want to Become a Full Stack Developer:
+
+Node.js
+Express.js
+MongoDB
+Authentication & Authorization
+REST APIs
+Deployment
+
+What's Bangla Coding School's next step --
+🔰Real World Html-Css-JS Project Tutorials
