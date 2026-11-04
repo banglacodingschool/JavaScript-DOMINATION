@@ -1127,7 +1127,7 @@ let eligible = false;
 //     console.log("Error :", er);
 //   });
 
-  // async await Fetch API
+// async await Fetch API
 
 //   async function getUser(){
 //      try {
@@ -1139,11 +1139,10 @@ let eligible = false;
 
 //      } catch (error) {
 //         console.log("error: ", error.message);
-//      } 
+//      }
 //   }
 
 // getUser();
-
 
 //DOM MANIPULTION
 // getElementById()
@@ -1166,7 +1165,6 @@ let eligible = false;
 
 // console.log(para2);
 
-
 //CHANGE TEXT
 // const title = document.querySelector("#title");
 
@@ -1183,7 +1181,6 @@ let eligible = false;
 // // message.textContent = "Hello Students";
 // message.innerHTML = "<strong>Hello Students</strong>";
 
-
 // const title = document.querySelector("#title");
 
 // const styleBtn = document.querySelector("#styleBtn");
@@ -1194,13 +1191,11 @@ let eligible = false;
 //    title.style.padding = "10px";
 // })
 
-
 //classlist
 
 // title.classList.add("highlight");
 // title.classList.remove("highlight");
 // toggle()
-
 
 // const todoList = document.querySelector("#todoList");
 // const addBtn = document.querySelector("#addBtn");
@@ -1212,7 +1207,6 @@ let eligible = false;
 
 //   todoList.appendChild(li);
 // })
-
 
 // Dark Mode Toggle
 
@@ -1251,7 +1245,6 @@ const title = document.querySelector("#title");
 
 // keydown, keyup
 
-
 // const input = document.querySelector("#username");
 // const result = document.querySelector("#result");
 
@@ -1273,13 +1266,12 @@ const title = document.querySelector("#title");
 // });
 
 // 4. Change Event
-  // const course= document.querySelector("#course");
-  // const selected= document.querySelector("#selected");
+// const course= document.querySelector("#course");
+// const selected= document.querySelector("#selected");
 
-  // course.addEventListener("change",()=>{
-  //   selected.textContent = "Selected Course : "+ course.value;
-  // });
-
+// course.addEventListener("change",()=>{
+//   selected.textContent = "Selected Course : "+ course.value;
+// });
 
 // const form = document.querySelector("#loginForm");
 // const message = document.querySelector("#message");
@@ -1292,13 +1284,12 @@ const title = document.querySelector("#title");
 
 //          message.textContent = `Welcome ${email}`;
 
-        //  console.log("Password length:"+ password.length);
-         
+//  console.log("Password length:"+ password.length);
 
-        //  console.log(event);
-        //  console.log(event.type);
-        //  console.log(event.target);
-  
+//  console.log(event);
+//  console.log(event.type);
+//  console.log(event.target);
+
 // });
 
 // removeEventListener()
@@ -1317,7 +1308,6 @@ const title = document.querySelector("#title");
 
 // stopPropagation()
 
-
 // 2. Event Delegation
 
 // const todoList = document.querySelector("#todoList");
@@ -1334,7 +1324,6 @@ const title = document.querySelector("#title");
 // 3. delete btn action to delete
 // 4. event delegation
 
-
 // const taskInput = document.querySelector("#taskInput");
 // const addBtn = document.querySelector("#addBtn");
 // const todoList = document.querySelector("#todoList");
@@ -1348,7 +1337,7 @@ const title = document.querySelector("#title");
 //       alert("Please enter a task");
 //       return;
 //     }
-   
+
 //     const li = document.createElement("li");
 //     const span = document.createElement("span");
 //     const deleteBtn = document.createElement("button")
@@ -1370,3 +1359,143 @@ const title = document.querySelector("#title");
 //     event.target.closest("li").remove();
 //   }
 // })
+
+//FORM HANDLING IN JS
+
+// const form = document.querySelector("#registerForm");
+
+// const nameInput = document.querySelector("#name");
+// const emailInput = document.querySelector("#email");
+// const passwordInput = document.querySelector("#password");
+// const confirmPasswordInput = document.querySelector("#confirmPassword");
+
+// const message = document.querySelector("#message");
+
+// // preventDefault()
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+
+//   console.log("Form Submitted");
+
+//   // custom validation
+//   const name = nameInput.value.trim();
+//   const email = emailInput.value.trim();
+//   const password = passwordInput.value.trim();
+//   const confirmPassword = confirmPasswordInput.value.trim();
+
+//   //Name validation
+//   if(!name){
+//     message.textContent = "Please enter your name";
+//     return;
+//   }
+
+//   //password validtion
+//   if(password.length < 6){
+//     message.textContent = "password must be at least 6 characters";
+//     return;
+//   }
+
+//   //confirm password validtion
+//   if(password !== confirmPassword){
+//     message.textContent = "passwords do not match!";
+//     message.style.color = "red";
+//     return;
+//   }
+
+//   //success
+
+//   message.textContent = `Welcome, ${name}! Form validated successfully.`;
+//   message.style.color = "green";
+
+//   form.reset();
+// });
+
+
+// 1. localStorage.setItem("username", "kamal");
+
+// 2. const username = localStorage.getItem("username");
+
+// console.log(username);
+
+// 3. localStorage.removeItem("username"); -- deletes specific data
+
+// 4. localStorage.clear()  -- deletes all saved data
+
+
+// sessionStorage.setItem("user","Kamal");
+
+// const user = sessionStorage.getItem("user");
+
+// console.log(user);
+
+// JSON.stringify() -- OBJECT TO JSON STRING
+// JSON.parse() -- JSON STRING TO OBJECT
+
+// const user = {
+//   name: "Kamal",
+//   age:22
+// };
+
+// localStorage.setItem("user", JSON.stringify(user));
+
+// const savedUser = JSON.parse(localStorage.getItem("user"));
+
+// console.log(savedUser);
+
+
+// const taskInput = document.querySelector("#taskInput");
+// const addBtn = document.querySelector("#addBtn");
+// const taskList = document.querySelector("#taskList");
+
+// // load saved tasks
+// let tasks = JSON.parse(localStorage.getItem("tasks") || "[]");
+
+// //display task
+// function displayTasks(){
+//   taskList.innerHTML = "";
+
+//   tasks.forEach((task,index)=>{
+//     const li = document.createElement("li");
+
+//     li.textContent = task;
+
+//     const deleteBtn = document.createElement("button");
+//     deleteBtn.textContent = "Delete";
+
+//     deleteBtn.addEventListener("click",()=>{
+//       tasks.splice(index,1);
+
+//       saveTasks();
+//     });
+
+//     li.appendChild(deleteBtn);
+//     taskList.appendChild(li);
+//   });
+// }
+
+// // save tasks
+
+// function saveTasks(){
+//   localStorage.setItem("tasks", JSON.stringify(tasks));
+
+//   displayTasks();
+// }
+
+
+// // add task
+
+// addBtn.addEventListener("click",()=>{
+//   const task =  taskInput.value.trim();
+
+//   if(task === "") return;
+
+//   tasks.push(task);
+
+//   saveTasks();
+
+//   taskInput.value = "";
+// });
+
+// //Initial display
+// displayTasks();
